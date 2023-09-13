@@ -1,0 +1,136 @@
+:root {
+    --violet: #582d7f;
+    --lightblue: #22b9d3;
+    --red: #f91a47;
+    --blue: #1b47a5;
+    --beige: #eee9d6;
+    --bone: #f1f0eb;
+    --green: #7dac9f;
+    --black: #000a1d;
+    --white: #FFFFFF;
+    --grey: #CCCCCC;
+ }
+ /* @font-face{
+    font-family: 'Co Headline Bold';
+    src: url('../assets/fonts/Co\ Headline\ Bold.otf');
+ }
+ @font-face{
+    font-family: 'Co Headline Light';
+    src: url('../assets/fonts/Co\ Headline\ Light.otf');
+ }
+ @font-face{
+    font-family: 'Co Headline';
+    src: url('../assets/fonts/Co\ Headline.otf');
+ }
+ @font-face{
+    font-family: 'Co Text Bold';
+    src: url('../assets/fonts//Co\ Text\ Bold.otf');
+ }
+ @font-face{
+    font-family: 'Co Text Light';
+    src: url('../assets/fonts/Co\ Text\ Light.otf');
+ }
+ @font-face{
+    font-family: 'Co Text';
+    src: url('../assets/fonts/Co\ Text.otf');
+ } */
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+header {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  padding: 40px 100px;
+  z-index: 1000;
+  width: 50%;
+  padding: 0px 50px;
+}
+header .header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+header .logo {
+  width: 200px;
+  height: auto;
+}
+header .logo_title {
+    width: 300px;
+    height: auto;
+}
+header h1{
+    text-transform: uppercase;
+    color: var(--black);
+    font-size: 100%;
+    margin-top: 20px;
+    padding: 0px 50px;
+}
+main{
+    position: absolute;
+    right: 0;
+    top: 20%;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+main .section {
+    padding: 70px 30px;
+    background-color: var(--white);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    color: var(--lightblue);
+    font-size: 250%;
+    margin: 20px;
+    text-align: center;
+}
+.subtitle{
+    color: var(--violet);
+    font-size: 120%;
+    margin: 20px;
+    text-align: center;
+}
+main a {
+    text-decoration: none;
+    text-align: center;
+}
+.div_button{
+    margin: 20px 0px;
+}
+.button{
+    padding: 10px 70px;
+    color: var(--black);
+    border: var(--black) 1px solid;
+}
+.social-icon{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
