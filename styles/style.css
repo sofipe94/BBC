@@ -1,16 +1,19 @@
 :root {
+    --green: #0f535b;
+    --orange: #c35439;
+    --bone: #fff8f5;
     --violet: #582d7f;
     --lightblue: #22b9d3;
     --red: #f91a47;
     --blue: #1b47a5;
     --beige: #eee9d6;
-    --bone: #f1f0eb;
+    /* --bone: #f1f0eb; */
     --green: #7dac9f;
     --black: #000a1d;
     --white: #FFFFFF;
     --grey: #CCCCCC;
  }
- /* @font-face{
+ @font-face{
     font-family: 'Co Headline Bold';
     src: url('../assets/fonts/Co\ Headline\ Bold.otf');
  }
@@ -33,8 +36,7 @@
  @font-face{
     font-family: 'Co Text';
     src: url('../assets/fonts/Co\ Text.otf');
- } */
-
+ }
 
 * {
     margin: 0;
@@ -58,7 +60,7 @@ video {
 header {
   position: absolute;
   top: 30%;
-  left: 0;
+  left: 0%;
   padding: 40px 100px;
   z-index: 1000;
   width: 50%;
@@ -71,18 +73,20 @@ header .header{
     justify-content: center;
 }
 header .logo {
-  width: 200px;
+  width: 500px;
   height: auto;
+  margin: 50px;
 }
-header .logo_title {
+/* header .logo_title {
     width: 300px;
     height: auto;
-}
+} */
 header h1{
     text-transform: uppercase;
-    color: var(--black);
-    font-size: 100%;
-    margin-top: 20px;
+    color: var(--bone);
+    font-size: 120%;
+    font-family: 'Co Headline Light';
+    margin: 50px 20px;
     padding: 0px 50px;
 }
 main{
@@ -106,14 +110,16 @@ main .section {
     justify-content: center;
 }
 .title{
-    color: var(--lightblue);
+    color: var(--green);
     font-size: 250%;
+    font-family: 'Co Text Light';
     margin: 20px;
     text-align: center;
 }
 .subtitle{
-    color: var(--violet);
+    color: var(--orange);
     font-size: 120%;
+    font-family: 'Co Text Light';
     margin: 20px;
     text-align: center;
 }
@@ -126,11 +132,119 @@ main a {
 }
 .button{
     padding: 10px 70px;
-    color: var(--black);
-    border: var(--black) 1px solid;
+    color: var(--orange);
+    border: var(--orange) 1px solid;
+    font-family: 'Co Text Light';
 }
 .social-icon{
     width: 40px;
     height: 40px;
     margin: 10px;
+}
+
+
+
+@media (max-width: 1024px) {
+    header {
+        position: absolute;
+        top: 30%;
+        left: 0%;
+        padding: 0px;
+        width: 50%;
+      }
+      header .logo {
+        width: 250px;
+        height: auto;
+        margin: 50px;
+        margin-bottom: 10px;
+      }
+      header h1{
+          font-size: 90%;
+          margin: 20px;
+          padding: 0px;
+          text-align: center;
+      }
+      main{
+          position: absolute;
+          right: 0%;
+          top: 30%;
+          width: 50%;
+      }
+      main .section {
+          padding: 10px;
+          background-color: var(--white);
+          width: 70%;
+      }
+      .title{
+          font-size: 150%;
+          margin: 10px;
+      }
+      .subtitle{
+          font-size: 90%;
+          margin: 10px;
+      }
+      .div_button{
+          margin: 20px 0px;
+      }
+      .button{
+          padding: 10px 40px;
+          color: var(--orange);
+      }
+      .social-icon{
+          width: 30px;
+          height: 30px;
+          margin: 10px;
+      }
+}
+@media (max-width: 767px) {
+    header {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        padding: 0px;
+        width: 100%;
+      }
+      header .logo {
+        width: 250px;
+        height: auto;
+        margin: 50px;
+        margin-bottom: 10px;
+      }
+      header h1{
+          font-size: 90%;
+          margin: 20px;
+          padding: 0px;
+          text-align: center;
+      }
+      main{
+          position: absolute;
+          left: 0%;
+          top: 45%;
+          width: 100%;
+      }
+      main .section {
+          padding: 10px;
+          background-color: var(--white);
+          width: 70%;
+      }
+      .title{
+          font-size: 150%;
+          margin: 10px;
+      }
+      .subtitle{
+          font-size: 90%;
+          margin: 10px;
+      }
+      .div_button{
+          margin: 20px 0px;
+      }
+      .button{
+          padding: 10px 40px;
+          color: var(--orange);
+      }
+      .social-icon{
+          width: 30px;
+          height: 30px;
+          margin: 10px;
+      }
 }
