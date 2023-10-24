@@ -73,8 +73,8 @@ header .header{
     justify-content: center;
 }
 header .logo {
-  width: 500px;
-  height: auto;
+  width: auto;
+  height: 250px;
   margin: 50px;
 }
 /* header .logo_title {
@@ -153,8 +153,8 @@ main a {
         width: 50%;
       }
       header .logo {
-        width: 250px;
-        height: auto;
+        width: auto;
+        height: 150px;
         margin: 50px;
         margin-bottom: 10px;
       }
@@ -205,8 +205,8 @@ main a {
         width: 100%;
       }
       header .logo {
-        width: 250px;
-        height: auto;
+        width: auto;
+        height: 150px;
         margin: 50px;
         margin-bottom: 10px;
       }
